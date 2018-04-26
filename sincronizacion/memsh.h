@@ -8,7 +8,8 @@
 #define ID 999
 #define ROUTE "/bin/lspci"
 
-#define SEM_ID 0x123456
+#define SEM_ID  0x101011
+
 
 
 typedef struct
