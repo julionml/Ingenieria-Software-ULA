@@ -7,7 +7,9 @@
 
 #define ID 999
 #define ROUTE "/bin/lspci"
+
 #define SEM_ID 0x123456
+
 
 typedef struct
 {
@@ -18,5 +20,7 @@ typedef struct
 
 typedef struct{
   pid_t pid_mon;
+
 	inf_p array_p[20];
+
 }shmem_data;
