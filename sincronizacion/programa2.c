@@ -32,7 +32,7 @@ int main()
   int sem;
 
   system("clear");
-  printf("\n\t--> Proceso %d \n\n",getpid());
+  printf("\n\t--> proceso %d \n\n",getpid());
   srand(getpid());
   key_t id_shmem = ftok(ROUTE, ID);
   void *pto_shmem;
@@ -69,7 +69,7 @@ int main()
 		  exit(EXIT_FAILURE);
 	  }
 
-    printf("\t\tMonitor sin espacio!!!\n\n");
+    printf("\t\tmonitor sin espacio!!!\n\n");
     exit(EXIT_SUCCESS);
   }
 
@@ -79,7 +79,7 @@ int main()
   for(i=0; i<repeticion; i++)
   {
     pto_inf->array_p[pos].numero++;
-    printf("\tNúmero: %d\n",i);
+    printf("\tnumero: %d\n",i);
     usleep(500000);
   }
 
